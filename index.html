@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<title>AdminSite - SCSS</title>
+</head>
+<body>
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand"><i class='bx icon bxs-smile'></i> AdminSite</a>
+		<ul class="nav-menu">
+			<li>
+				<a href="#" class="active"><i class='bx icon bxs-dashboard' ></i> Dashboard</a>
+			</li>
+			<li class="divider" data-text="Main">
+				Main
+			</li>
+			<li>
+				<a href="#"><i class='bx icon bxs-inbox' ></i> Elements <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="dropdown-nav-menu">
+					<li>
+						<a href="#">Alerts</a>
+					</li>
+					<li>
+						<a href="#">Badges</a>
+					</li>
+					<li>
+						<a href="#">Breadcrumbs</a>
+					</li>
+					<li>
+						<a href="#">Buttons</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class='bx icon bxs-widget' ></i> Widgets</a>
+			</li>
+			<li>
+				<a href="#"><i class='bx icon bxs-chart' ></i> Charts</a>
+			</li>
+			<li class="divider" data-text="Table and forms">
+				Table and forms
+			</li>
+			<li>
+				<a href="#"><i class='bx icon bxs-notepad' ></i> Forms <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="dropdown-nav-menu">
+					<li>
+						<a href="#">Basic</a>
+					</li>
+					<li>
+						<a href="#">Checkbox</a>
+					</li>
+					<li>
+						<a href="#">Select</a>
+					</li>
+					<li>
+						<a href="#">Radio button</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class='bx icon bx-table' ></i> Table</a>
+			</li>
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class="bx bx-menu toggle-sidebar"></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class="bx bx-search"></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell' ></i>
+				<span>5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-dots' ></i>
+				<span>8</span>
+			</a>
+			<div class="divider"></div>
+			<div class="profile">
+				<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+				<ul class="profile-menu">
+					<li>
+						<a href="#"><i class='bx bxs-user-circle'></i> Profile</a>
+					</li>
+					<li>
+						<a href="#"><i class='bx bxs-cog' ></i> Settings</a>
+					</li>
+					<li>
+						<a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<h1>Dashboard</h1>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li>/</li>
+				<li><a href="#" class="active">Dashboard</a></li>
+			</ul>
+			<div class="cards">
+				<div class="card">
+					<div class="head">
+						<div>
+							<h3>1500</h3>
+							<p>Traffic</p>
+						</div>
+						<i class='bx bx-trending-up'></i>
+					</div>
+					<div class="progress">
+						<div></div>
+						<p class="label">50%</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h3>1500</h3>
+							<p>Traffic</p>
+						</div>
+						<i class='bx bx-trending-up'></i>
+					</div>
+					<div class="progress">
+						<div></div>
+						<p class="label">50%</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h3>1500</h3>
+							<p>Traffic</p>
+						</div>
+						<i class='bx bx-trending-up'></i>
+					</div>
+					<div class="progress">
+						<div></div>
+						<p class="label">50%</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h3>1500</h3>
+							<p>Traffic</p>
+						</div>
+						<i class='bx bx-trending-up'></i>
+					</div>
+					<div class="progress">
+						<div></div>
+						<p class="label">50%</p>
+					</div>
+				</div>
+			</div>
+			<div class="data">
+				<div class="card">
+					<h3>Sales reports</h3>
+					<div class="chart">
+						<div id="chart">
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<h3>Todo list</h3>
+					<div class="todos">
+						<div class="item">
+							<span>Buy a coffee</span>
+							<div>
+								<i class='bx bx-dots-vertical-rounded' ></i>
+								<ul class="dropdown-menu-todo">
+									<li><a href="#">Edit</a></li>
+									<li><a href="#">Complete</a></li>
+									<li><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item">
+							<span>Buy a coffee</span>
+							<div>
+								<i class='bx bx-dots-vertical-rounded' ></i>
+								<ul class="dropdown-menu-todo">
+									<li><a href="#">Edit</a></li>
+									<li><a href="#">Complete</a></li>
+									<li><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item">
+							<span>Buy a coffee</span>
+							<div>
+								<i class='bx bx-dots-vertical-rounded' ></i>
+								<ul class="dropdown-menu-todo">
+									<li><a href="#">Edit</a></li>
+									<li><a href="#">Complete</a></li>
+									<li><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item">
+							<span>Buy a coffee</span>
+							<div>
+								<i class='bx bx-dots-vertical-rounded' ></i>
+								<ul class="dropdown-menu-todo">
+									<li><a href="#">Edit</a></li>
+									<li><a href="#">Complete</a></li>
+									<li><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item">
+							<span>Buy a coffee</span>
+							<div>
+								<i class='bx bx-dots-vertical-rounded' ></i>
+								<ul class="dropdown-menu-todo">
+									<li><a href="#">Edit</a></li>
+									<li><a href="#">Complete</a></li>
+									<li><a href="#">Delete</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
